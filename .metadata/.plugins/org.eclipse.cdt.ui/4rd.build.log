@@ -1,0 +1,22 @@
+17:41:38 **** Incremental Build of configuration Debug for project 4rd ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/buttonController.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/projectWork/4rd/4rd/Core/Lib/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/buttonController.d" -MT"Core/Src/buttonController.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/buttonController.o"
+arm-none-eabi-gcc "../Core/Src/heaterController.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/projectWork/4rd/4rd/Core/Lib/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/heaterController.d" -MT"Core/Src/heaterController.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/heaterController.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/projectWork/4rd/4rd/Core/Lib/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/oledController.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/projectWork/4rd/4rd/Core/Lib/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/oledController.d" -MT"Core/Src/oledController.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/oledController.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/projectWork/4rd/4rd/Core/Lib/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Lib/Src/onewire.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/projectWork/4rd/4rd/Core/Lib/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Lib/Src/onewire.d" -MT"Core/Lib/Src/onewire.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Lib/Src/onewire.o"
+arm-none-eabi-gcc -o "4rd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\projectWork\4rd\4rd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4rd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4rd.elf
+ 
+arm-none-eabi-size   4rd.elf 
+arm-none-eabi-objdump -h -S  4rd.elf  > "4rd.list"
+   text	   data	    bss	    dec	    hex	filename
+  26420	    136	   3112	  29668	   73e4	4rd.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4rd.list
+ 
+
+17:41:39 Build Finished. 0 errors, 0 warnings. (took 1s.112ms)
+

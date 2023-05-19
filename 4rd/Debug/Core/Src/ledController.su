@@ -1,0 +1,2 @@
+../Core/Src/ledController.c:4:6:led1OnOff	16	static
+../Core/Src/ledController.c:15:6:led2OnOff	16	static

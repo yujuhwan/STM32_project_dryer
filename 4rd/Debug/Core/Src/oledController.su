@@ -1,0 +1,8 @@
+../Core/Src/oledController.c:10:6:opening	8	static
+../Core/Src/oledController.c:46:6:toggleScreen	8	static
+../Core/Src/oledController.c:66:6:startToggle	4	static
+../Core/Src/oledController.c:72:6:printDefault	112	static
+../Core/Src/oledController.c:92:6:printBackground	8	static
+../Core/Src/oledController.c:104:6:printTemperNoUpdate	120	static
+../Core/Src/oledController.c:113:6:printTemper	120	static
+../Core/Src/oledController.c:123:6:printHeaterState	16	static
