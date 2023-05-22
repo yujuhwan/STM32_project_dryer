@@ -221,7 +221,7 @@ void EXTI0_IRQHandler(void)
   HAL_GPIO_EXTI_IRQHandler(PB0_TEMP_SET_UP_Pin);
   /* USER CODE BEGIN EXTI0_IRQn 1 */
 
-
+  // prevent double click
 	if((HAL_GetTick() - m_button_before_time) > BUTTON_GAP){
 	g_f_sw_up = 1;
 	}
@@ -241,6 +241,8 @@ void EXTI1_IRQHandler(void)
   /* USER CODE END EXTI1_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(PB1_TEMP_SET_FIX_Pin);
   /* USER CODE BEGIN EXTI1_IRQn 1 */
+
+  // prevent double click
 	if((HAL_GetTick() - m_button_before_time) > BUTTON_GAP){
 	g_f_sw_fix = 1;
 	}
@@ -258,6 +260,8 @@ void EXTI2_IRQHandler(void)
   /* USER CODE END EXTI2_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(PB2_TEMP_SET_DOWN_Pin);
   /* USER CODE BEGIN EXTI2_IRQn 1 */
+
+  	// prevent double click
 	if((HAL_GetTick() - m_button_before_time) > BUTTON_GAP){
 	g_f_sw_down = 1;
 	}
@@ -286,6 +290,7 @@ void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
 
+	// prevent double click
 	if(m_power_sw_timer > POWER_SW_CHECK_TIME){
 		if(getSwState() == ON_t){
 			led1OnOff(ON_t);
@@ -296,6 +301,7 @@ void TIM3_IRQHandler(void)
 		m_power_sw_timer =0;
 	}
 
+	// 2 count toggle
 	if(m_toggle_timer > TOGGLE_TIME){
 		toggleScreen();
 		m_toggle_timer = 0;

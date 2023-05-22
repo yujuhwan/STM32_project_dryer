@@ -5,8 +5,6 @@
 static uint8_t m_state = 0;
 
 
-//static int m_before_temper = 0;
-
 static int m_desired_temper = DEFAULT_TEMPER;
 static int m_fixed_temper = DEFAULT_TEMPER;
 
@@ -19,11 +17,11 @@ void heaterControl(float temper){
 
 	if(m_state){
 
-		if((int)temper >= (m_fixed_temper - GOING_UP_GAP)){
+		if((int)temper >= (m_fixed_temper - GOING_UP_GAP)){  // 내부 잔열 고려
 				heaterOnOff(OFF_t);
 		}
 	}else{
-		if((int)temper <  m_fixed_temper - GOING_DOWN_GAP){
+		if((int)temper <  m_fixed_temper - GOING_DOWN_GAP){  // 내부 잔열 고려
 			heaterOnOff(ON_t);
 		}
 	}
@@ -62,6 +60,7 @@ int getFixedTemper(void){
 }
 
 
+// Relay and Led2 controller
 void heaterOnOff(uint8_t onOff){
 
 	HAL_GPIO_WritePin(PB5_RELAY_ON_OFF_CTRL_GPIO_Port, PB5_RELAY_ON_OFF_CTRL_Pin,onOff);

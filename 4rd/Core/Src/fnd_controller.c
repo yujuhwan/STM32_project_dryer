@@ -61,7 +61,7 @@ void send(uint8_t X) {
  }
 
 
-
+// 온도계의 소수 점 첫쨰자리 .0표시
 void digit4_show(int n, int replay, uint8_t showZero) {
 	int n1, n2, n3, n4;
 

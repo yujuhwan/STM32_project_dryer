@@ -138,7 +138,7 @@ int main(void)
     while (1)
     {
 
-    	checkButton();
+    	checkButton();  // button controller
 
 
 		if (!isConverting()) {
