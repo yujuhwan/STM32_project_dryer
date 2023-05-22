@@ -9,38 +9,43 @@ static uint8_t m_toggle_count = 0;
 void printTemperNoUpdate(int temper) ;
 void opening() {
 
-	/*SSD1306_GotoXY(0, 0);
+	 SSD1306_GotoXY(0, 0);
 	 SSD1306_Puts("Start!", &Font_11x18, 1);
 	 SSD1306_GotoXY(10, 20);
 	 SSD1306_Puts(" Pepper :)", &Font_11x18, 1);
 	 SSD1306_GotoXY(22, 40);
 	 SSD1306_Puts("dryer!!", &Font_11x18, 1);
 	 SSD1306_UpdateScreen(); //display
-	 HAL_Delay(5000);
+	 HAL_Delay(3000);
 
 
 	 SSD1306_InvertDisplay(1);
 	 SSD1306_Clear();
 
-	 SSD1306_DrawBitmap(0, 0, ojtubelog1, 128, 64, 1);
+	 SSD1306_DrawBitmap(0, 0, yjhlogo1, 128, 64, 1);
 	 SSD1306_UpdateScreen();
-	 HAL_Delay(300);
+	 HAL_Delay(500);
 
 	 SSD1306_Clear();
-	 SSD1306_DrawBitmap(0, 0, ojtubelog2, 128, 64, 1);
+	 SSD1306_DrawBitmap(0, 0, yjhlogo2, 128, 64, 1);
 	 SSD1306_UpdateScreen();
-	 HAL_Delay(300);
+	 HAL_Delay(500);
 
 	 SSD1306_Clear();
-	 SSD1306_DrawBitmap(0, 0, ojtubelog3, 128, 64, 1);
+	 SSD1306_DrawBitmap(0, 0, yjhlogo3, 128, 64, 1);
 	 SSD1306_UpdateScreen();
-	 HAL_Delay(300);
+	 HAL_Delay(500);
 
 	 SSD1306_Clear();
-	 SSD1306_DrawBitmap(0, 0, ojtubelog4, 128, 64, 1);
+	 SSD1306_DrawBitmap(0, 0, yjhlogo4, 128, 64, 1);
 	 SSD1306_UpdateScreen();
-	 HAL_Delay(5000);*/
-	printDefault();
+	 HAL_Delay(500);
+
+	 SSD1306_Clear();
+	 SSD1306_DrawBitmap(0, 0, yjhlogo1, 128, 64, 1);
+	 SSD1306_UpdateScreen();
+	 HAL_Delay(3000);
+	 printDefault();
 }
 
 void toggleScreen() {
