@@ -9,10 +9,10 @@
 <br />
 
 ## Interface
-#### SPI : FND
-#### I2C : OLED
-#### 1-Wire : Temperature Sensor
-#### UART : USB-TTL
+#### - SPI : FND
+#### - I2C : OLED
+#### - 1-Wire : Temperature Sensor
+#### - UART : USB-TTL
 
 <br />
 
