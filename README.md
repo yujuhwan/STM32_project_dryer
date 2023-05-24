@@ -8,6 +8,14 @@
 
 <br />
 
+## Interface
+#### SPI : FND
+#### I2C : OLED
+#### 1-Wire : Temperature Sensor
+#### UART : USB-TTL
+
+<br />
+
 ## Opearating Video Link
 [Blog](https://blog.naver.com/u_j00/223110751645)
 
