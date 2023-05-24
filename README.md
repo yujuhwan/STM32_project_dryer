@@ -8,9 +8,10 @@
 
 <br />
 
-## Pin 
-
 ## Opearating Video Link
 [Blog](https://blog.naver.com/u_j00/223110751645)
-  
+
+
+
+ 
   
